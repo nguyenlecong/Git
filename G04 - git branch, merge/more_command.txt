@@ -1,0 +1,3 @@
+gop nhanh: git merge branch_name
+xoa nhanh: git branch -d branch_name
+graph: git log (--oneline) --graph

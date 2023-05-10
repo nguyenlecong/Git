@@ -7,3 +7,5 @@ dev 3
 motor 1
 
 motor 2
+
+gamma 1

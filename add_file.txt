@@ -3,3 +3,9 @@ dev 1
 dev 2
 
 dev 3
+
+motor 1
+
+motor 2
+
+motor 3

@@ -1,0 +1,23 @@
+Git không thể đẩy các thư mục trống. Nó chỉ có thể theo dõi các tập tin.
+Nếu bạn cố gắng đẩy một thư mục không có gì trong đó, mặc dù nó sẽ tồn tại
+trên máy local của bạn, nhưng sẽ không có gì đi vào nhánh của bạn. Vì vậy,
+nếu ai đó cố gắng clone code của bạn, họ sẽ không có cấu trúc thư mục giống
+như bạn làm trên máy local của mình.
+
+Bây giờ, chúng ta đã biết rằng Git chỉ theo dõi các tệp, vì vậy chúng ta biết
+chúng ta cần thêm một cái gì đó vào thư mục. Bạn có thể thêm bất cứ điều gì.
+Bạn chỉ cần thêm một tệp “linh tinh” để đảm bảo rằng thư mục được theo dõi và
+sẽ được đẩy lên remote. Bạn có thể sao chép và dán tệp văn bản file.txt mà không
+có gì trong đó và điều đó sẽ hoạt động. Bạn có thể đặt một hình ảnh PNG của một
+con mèo vào cũng được. Nhưng liệu làm như vậy với các dự án lớn có thiếu chuyên
+nghiệp không?
+
+Một phương pháp phổ biến, được tiêu chuẩn hóa để giải quyết vấn đề chính xác này
+là đẩy một tệp có tên .gitkeep vào các thư mục trống của bạn. Đây không phải là
+một tính năng của Git! Vì vậy, bạn có thể đặt tên cho nó bất cứ điều gì. Không có
+gì đặc biệt về tên .gitkeep.
+
+.gitkeep là một điều phổ biến bạn sẽ thấy trong các codebase (code nền tảng đã
+có sẵn), nơi một thư mục trống cần được theo dõi thông qua Git. Tên của tệp này
+có thể không phải lúc nào cũng là .gitkeep nhưng bạn sẽ thấy thực tế lặp đi lặp
+lại với tư cách là lập trình viên.

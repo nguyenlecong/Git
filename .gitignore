@@ -1,1 +1,20 @@
+### Gitignore là file có tên là .gitignore do Git quy định. Nhiệm vụ của nó là liệt kê
+những file mà mình không mong muốn cho vào git hoặc hiểu nôm na là Git sẽ bỏ qua những
+file đó đi. Gitignore hiện nay rất quan trọng trong team work
+
+### Khi add 1 file mới vào git, git sẽ kiểm tra danh sách những file sẽ bỏ qua trong
+file .gitignore và không add chúng vào git. Đó mới chỉ là điều kiện cần, điều kiện đủ
+là files không có trong git cache nữa thì git nó mới bỏ qua, chứ files mà nằm trong
+git cache thì .gitignore sẽ vô tác dụng
+
+### Bất cứ project nào cũng nên dùng nó, bạn nên tạo ngay file .gitignore trong thư
+mục gốc ngay khi khởi tạo project của bạn và liệt kê luôn những file mà bạn muốn git
+bỏ qua
+
+### Xóa file ra khỏi git cache
+git rm -r --cached /path/to/file_or_folder
+
+### Xóa bỏ hết file của git cache
+git rm -r --cached .
+
 .history
